@@ -7,12 +7,11 @@ import { HeroHeader } from "@/components/hero8-header";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 
 const carouselImages = [
-  "/tech1.JPG",
-  "/tech2.JPG",
-  "/tech3.JPG",
+  "/construction1.jpg",
+  "/construction2.jpg",
+  "/construction3.jpg",
 ];
 
-// Define properly typed variants
 const textVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
@@ -23,23 +22,16 @@ const textVariants: Variants = {
 };
 
 const imageVariants: Variants = {
-  enter: {
-    opacity: 0,
-    scale: 1.1,
-  },
+  enter: { opacity: 0, scale: 1.1 },
   center: {
     opacity: 1,
     scale: 1,
-    transition: {
-      duration: 0.5,
-    },
+    transition: { duration: 0.5 },
   },
   exit: {
     opacity: 0,
     scale: 0.9,
-    transition: {
-      duration: 0.3,
-    },
+    transition: { duration: 0.3 },
   },
 };
 
@@ -66,13 +58,12 @@ export default function HeroSection() {
               initial="enter"
               animate="center"
               exit="exit"
-              transition={{ duration: 0.5 }}
               className="absolute inset-0 w-full h-full"
             >
-              <div className="absolute inset-0 z-10 bg-black/60" />
+              <div className="absolute inset-0 z-10 bg-black/50" />
               <Image
                 src={carouselImages[currentImage]}
-                alt={`Slide ${currentImage + 1}`}
+                alt={`Construction Project ${currentImage + 1}`}
                 fill
                 className="object-cover"
                 priority
@@ -88,8 +79,8 @@ export default function HeroSection() {
                 animate="visible"
                 variants={textVariants}
               >
-                <span className="text-white inline-block mb-4 font-semibold ">
-                  Welcome to AlGaddafDigitalHub
+                <span className="text-white inline-block mb-4 font-semibold">
+                  Welcome to Sapma International Nig. LTD
                 </span>
               </motion.div>
 
@@ -100,7 +91,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.2 }}
                 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
               >
-                Innovating the Future of Technology
+                Building Nigeria&apos;s Future Together
               </motion.h1>
 
               <motion.p
@@ -110,8 +101,8 @@ export default function HeroSection() {
                 transition={{ delay: 0.4 }}
                 className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl"
               >
-                Empowering businesses through digital transformation, cutting-edge
-                solutions, and innovative technology services.
+                Leading construction company delivering excellence in commercial,
+                industrial, and infrastructure projects across Nigeria.
               </motion.p>
 
               <motion.div
@@ -124,17 +115,17 @@ export default function HeroSection() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-white hover:bg-primary/90 text-black px-8"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-8"
                 >
-                  <Link href="#services">Explore Services</Link>
+                  <Link href="#projects">View Our Projects</Link>
                 </Button>
                 <Button
                   asChild
                   size="lg"
                   variant="outline"
-                  className="border-white dark:text-white  hover:bg-white hover:text-black"
+                  className="border-white text-white hover:bg-white hover:text-black"
                 >
-                  <Link href="#contact">Get in Touch</Link>
+                  <Link href="#contact">Request Quote</Link>
                 </Button>
               </motion.div>
             </div>
@@ -142,8 +133,13 @@ export default function HeroSection() {
 
           {/* Scroll Indicator */}
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ repeat: Infinity, duration: 1.5 }}
+            animate={{
+              y: [0, 10, 0],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 1.5,
+            }}
             className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
           >
             <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">

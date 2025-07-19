@@ -1,7 +1,7 @@
 "use client";
 import { motion, Variants } from "framer-motion";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Code2, Paintbrush, Database, FileCode2, Globe2, Cpu } from "lucide-react";
+import { Building2, Hammer, HardHat, Factory, ShieldCheck, Users } from "lucide-react";
 import { ReactNode } from "react";
 
 const containerVariants: Variants = {
@@ -15,17 +15,6 @@ const containerVariants: Variants = {
   }
 };
 
-// const cardVariants: Variants = {
-//   hidden: { y: 20, opacity: 0 },
-//   visible: { 
-//     y: 0,
-//     opacity: 1,
-//     transition: {
-//       duration: 0.5
-//     }
-//   }
-// };
-
 export default function Features() {
   return (
     <motion.section 
@@ -37,10 +26,10 @@ export default function Features() {
       <div className="@container mx-auto max-w-5xl px-6">
         <div className="text-center">
           <h2 className="text-balance text-4xl font-semibold lg:text-5xl">
-            Why Choose AlGaddaf Digital Hub?
+            Why Choose Sapma International?
           </h2>
-          <p className="mt-4">
-            Comprehensive digital solutions tailored to your needs
+          <p className="mt-4 text-muted-foreground">
+            Excellence in Construction, Engineering, and Infrastructure Development
           </p>
         </div>
         <motion.div 
@@ -50,14 +39,13 @@ export default function Features() {
           <Card className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <Code2 className="size-6" aria-hidden />
+                <Building2 className="size-6" aria-hidden />
               </CardDecorator>
-              <h3 className="mt-6 font-medium">Programming Services</h3>
+              <h3 className="mt-6 font-medium">Commercial Construction</h3>
             </CardHeader>
             <CardContent>
-              <p className="text-sm">
-                Custom software development, web applications, and mobile app
-                solutions using cutting-edge technologies.
+              <p className="text-sm text-muted-foreground">
+                State-of-the-art commercial buildings, offices, and retail spaces with modern amenities and sustainable designs.
               </p>
             </CardContent>
           </Card>
@@ -65,14 +53,13 @@ export default function Features() {
           <Card className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <Paintbrush className="size-6" aria-hidden />
+                <Factory className="size-6" aria-hidden />
               </CardDecorator>
-              <h3 className="mt-6 font-medium">Graphic Design Services</h3>
+              <h3 className="mt-6 font-medium">Industrial Projects</h3>
             </CardHeader>
             <CardContent>
-              <p className="text-sm">
-                Professional branding, UI/UX design, and visual content creation
-                that captivates your audience.
+              <p className="text-sm text-muted-foreground">
+                Specialized industrial facilities, warehouses, and manufacturing plants built to precise specifications.
               </p>
             </CardContent>
           </Card>
@@ -80,14 +67,13 @@ export default function Features() {
           <Card className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <Database className="size-6" aria-hidden />
+                <HardHat className="size-6" aria-hidden />
               </CardDecorator>
-              <h3 className="mt-6 font-medium">Digital Fundamentals</h3>
+              <h3 className="mt-6 font-medium">Expert Team</h3>
             </CardHeader>
             <CardContent>
-              <p className="text-sm">
-                Core digital infrastructure, cloud solutions, and technical
-                consulting for your business growth.
+              <p className="text-sm text-muted-foreground">
+                Highly skilled professionals with decades of combined experience in construction and engineering.
               </p>
             </CardContent>
           </Card>
@@ -95,14 +81,13 @@ export default function Features() {
           <Card className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <FileCode2 className="size-6" aria-hidden />
+                <Hammer className="size-6" aria-hidden />
               </CardDecorator>
-              <h3 className="mt-6 font-medium">Software Contracting</h3>
+              <h3 className="mt-6 font-medium">Renovation Services</h3>
             </CardHeader>
             <CardContent>
-              <p className="text-sm">
-                Dedicated development teams and project-based solutions for your
-                software needs.
+              <p className="text-sm text-muted-foreground">
+                Complete renovation and modernization services for existing structures with minimal disruption.
               </p>
             </CardContent>
           </Card>
@@ -110,14 +95,13 @@ export default function Features() {
           <Card className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <Globe2 className="size-6" aria-hidden />
+                <ShieldCheck className="size-6" aria-hidden />
               </CardDecorator>
-              <h3 className="mt-6 font-medium">Digital Marketing</h3>
+              <h3 className="mt-6 font-medium">Quality Assurance</h3>
             </CardHeader>
             <CardContent>
-              <p className="text-sm">
-                SEO optimization, social media management, and digital marketing
-                strategies that drive results.
+              <p className="text-sm text-muted-foreground">
+                Rigorous quality control standards and safety measures throughout every project phase.
               </p>
             </CardContent>
           </Card>
@@ -125,14 +109,13 @@ export default function Features() {
           <Card className="group shadow-zinc-950/5">
             <CardHeader className="pb-3">
               <CardDecorator>
-                <Cpu className="size-6" aria-hidden />
+                <Users className="size-6" aria-hidden />
               </CardDecorator>
-              <h3 className="mt-6 font-medium">IT Consulting</h3>
+              <h3 className="mt-6 font-medium">Client Support</h3>
             </CardHeader>
             <CardContent>
-              <p className="text-sm">
-                Expert guidance on digital transformation, technology stack
-                selection, and IT strategy.
+              <p className="text-sm text-muted-foreground">
+                Dedicated project managers and support teams ensuring clear communication and timely delivery.
               </p>
             </CardContent>
           </Card>

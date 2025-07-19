@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Home | Algaddaf Digital Hub",
-  description: "Welcome to Algaddaf Digital Hub, your gateway to innovative tech events and training programs.",
+  title: "Home | Sapma International",
+  description: "Sapma International - Excellence in Construction, Engineering, and Infrastructure Development",
 };
 
 export default function RootLayout({

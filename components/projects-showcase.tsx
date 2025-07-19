@@ -35,6 +35,36 @@ const projects = [
 		completion: "2024",
 		category: "Healthcare",
 	},
+	{
+		title: "Kano Solar Power Plant",
+		description:
+			"100MW solar power facility with advanced storage systems",
+		image: "/projects/solar-plant.jpg",
+		status: "Completed",
+		location: "Kano, Nigeria",
+		completion: "2023",
+		category: "Energy",
+	},
+	{
+		title: "Calabar Smart Housing Estate",
+		description:
+			"500-unit modern residential development with smart home features",
+		image: "/projects/smart-housing.jpg",
+		status: "Ongoing",
+		location: "Calabar, Nigeria",
+		completion: "2024",
+		category: "Residential",
+	},
+	{
+		title: "Enugu Shopping Complex",
+		description:
+			"Multi-level retail center with entertainment facilities",
+		image: "/projects/shopping-complex.jpg",
+		status: "Planning",
+		location: "Enugu, Nigeria",
+		completion: "2025",
+		category: "Commercial",
+	},
 	// Add more projects as needed
 ];
 

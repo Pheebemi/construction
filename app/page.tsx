@@ -5,6 +5,8 @@ import CallToAction from "@/components/call-to-action";
 import FooterSection from "@/components/footer";
 import ContactSection from "@/components/Contact";
 import ProjectsShowcase from "@/components/projects-showcase";
+import StatsSection from "@/components/stats-section";
+import ImageGallery from "@/components/image-gallery";
 
 export default function Home() {
   return (
@@ -12,9 +14,8 @@ export default function Home() {
       <HeroSection />
       <Features />
       <ProjectsShowcase />
-      <ContentSection />
-      <CallToAction />
-      <ContactSection />
+      <StatsSection />
+      <ImageGallery />
       <FooterSection />
     </>
   );
